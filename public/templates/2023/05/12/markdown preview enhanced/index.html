@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Welcome to Han MuYa's blog, have fun!" />
+  
+  <meta name="description" content="Markdown&amp;#x5B66;&amp;#x4E60;                                                                                                         &#x2F;**  * prism.js Github theme based on GitHub&#39;s theme.  * @author">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/05/12/markdown%20preview%20enhanced/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Markdown&amp;#x5B66;&amp;#x4E60;                                                                                                         &#x2F;**  * prism.js Github theme based on GitHub&#39;s theme.  * @author">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-12T09:08:41.893Z">
+<meta property="article:modified_time" content="2023-05-05T09:37:43.834Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+  
+
+  
+  
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">寒木雅的个人博客</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        寒木雅的个人博客
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        热衷鼓捣数据分析的假猿
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-markdown preview enhanced" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <!DOCTYPE html><html><head>
+      <title>Markdown&#x5B66;&#x4E60;</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Yuan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.5\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\Yuan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.5\node_modules\@shd101wyy\mume\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="markdown-preview-enhanced-%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B">Markdown Preview Enhanced &#x57FA;&#x7840;&#x6559;&#x7A0B;</h1>
+
+<p><strong>1.&#x5D4C;&#x5165;Vega&#x6216;&#x8005;Vega-lite&#x753B;&#x56FE;</strong></p>
+<pre data-role="codeBlock" data-info class="language-"><code>Markdown Preview Enhanced&#x652F;&#x6301;&#x5D4C;&#x5165;Vega&#x6216;&#x8005;Vega-lite&#x8FDB;&#x884C;&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x3002;
+</code></pre><p><!--?xml version="1.0" encoding="utf-8"?-->
+
+<svg class="marks" width="856" height="247" viewBox="0 0 856 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><rect width="856" height="247" style="fill: white;"/><g transform="translate(51,10)"><g class="mark-group role-frame root"><g transform="translate(0,0)"><path class="background" d="M0.5,0.5h800v200h-800Z" style="fill: none; stroke: #ddd;"/><g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-grid" style="pointer-events: none;"><line transform="translate(0,200)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,160)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,120)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,80)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,40)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,0)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-group role-axis"><g transform="translate(0.5,200.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-tick" style="pointer-events: none;"><line transform="translate(44,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(133,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(222,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(311,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(400,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(488,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(577,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(666,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(755,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="middle" transform="translate(43.94444444444446,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">A</text><text text-anchor="middle" transform="translate(132.83333333333334,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">B</text><text text-anchor="middle" transform="translate(221.72222222222223,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">C</text><text text-anchor="middle" transform="translate(310.6111111111111,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">D</text><text text-anchor="middle" transform="translate(399.5,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">E</text><text text-anchor="middle" transform="translate(488.3888888888889,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">F</text><text text-anchor="middle" transform="translate(577.2777777777777,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">G</text><text text-anchor="middle" transform="translate(666.1666666666666,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">H</text><text text-anchor="middle" transform="translate(755.0555555555555,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">I</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,0)" x2="800" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-title" style="pointer-events: none;"><text text-anchor="middle" transform="translate(400,30)" style="font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #000; opacity: 1;">a</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-tick" style="pointer-events: none;"><line transform="translate(0,200)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,160)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,120)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,80)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,40)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,0)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="end" transform="translate(-7,203)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">0</text><text text-anchor="end" transform="translate(-7,163)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">20</text><text text-anchor="end" transform="translate(-7,123)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">40</text><text text-anchor="end" transform="translate(-7,83)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">60</text><text text-anchor="end" transform="translate(-7,42.99999999999999)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">80</text><text text-anchor="end" transform="translate(-7,3)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">100</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,200)" x2="0" y2="-200" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-title" style="pointer-events: none;"><text text-anchor="middle" transform="translate(-35,100) rotate(-90) translate(0,-2)" style="font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #000; opacity: 1;">b</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-rect role-mark marks"><path d="M4.444444444444457,144h80v56h-80Z" style="fill: #4c78a8;"/><path d="M93.33333333333334,89.99999999999999h80v110.00000000000001h-80Z" style="fill: #4c78a8;"/><path d="M182.22222222222223,114.00000000000001h80v85.99999999999999h-80Z" style="fill: #4c78a8;"/><path d="M271.1111111111111,17.999999999999993h80v182h-80Z" style="fill: #4c78a8;"/><path d="M360,37.999999999999986h80v162h-80Z" style="fill: #4c78a8;"/><path d="M448.8888888888889,94h80v106h-80Z" style="fill: #4c78a8;"/><path d="M537.7777777777777,162h80v38h-80Z" style="fill: #4c78a8;"/><path d="M626.6666666666666,26h80v174h-80Z" style="fill: #4c78a8;"/><path d="M715.5555555555555,96h80v104h-80Z" style="fill: #4c78a8;"/></g></g><path class="foreground" d="" style="display: none; fill: none;"/></g></g></g></svg></p><p><strong>2.&#x5D4C;&#x5165;Vega&#x6216;&#x8005;Vega-lite&#x753B;&#x56FE;</strong></p>
+<pre data-role="codeBlock" data-info class="language-"><code>Markdown Preview Enhanced&#x652F;&#x6301;&#x7ED8;&#x5236;&#x6D41;&#x7A0B;&#x56FE;&#x3002;
+</code></pre><div class="mermaid">sequenceDiagram
+    participant &#x4F01;&#x4E1A;
+    participant &#x4E0B;&#x6E38;
+    &#x4F01;&#x4E1A;-&gt;&gt;&#x79FB;&#x52A8;: &#x8C03;&#x5EA6;
+    loop &#x5FC3;&#x8DF3;&#x68C0;&#x6D4B;
+        &#x79FB;&#x52A8;-&gt;&gt;&#x79FB;&#x52A8;: SDK
+    end
+    Note right of &#x79FB;&#x52A8;: &#x8BE6;&#x89C1;&#x6587;&#x6863; &lt;br/&gt;&#x8D44;&#x6599;
+    &#x79FB;&#x52A8;--&gt;&gt;&#x4F01;&#x4E1A;: &#x63A5;&#x5355;
+    &#x79FB;&#x52A8;-&gt;&gt;&#x4E0B;&#x6E38;: &#x63A8;&#x9001;
+    &#x4E0B;&#x6E38;--&gt;&gt;&#x79FB;&#x52A8;: &#x6D41;&#x7A0B;&#x7ED3;&#x675F;
+</div><p><strong>3.&#x5D4C;&#x5165;&#x8FD0;&#x884C;python&#x6216;&#x5176;&#x5B83;&#x8BED;&#x8A00;</strong></p>
+<pre data-role="codeBlock" data-info class="language-"><code>Markdown Preview Enhanced&#x652F;&#x6301;&#x5D4C;&#x5165;&#x4E0E;&#x8FD0;&#x884C;python&#x6216;&#x5176;&#x5B83;&#x8BED;&#x8A00;&#x3002;
+</code></pre><div class="code-chunk" data-id="code-chunk-id-0" data-cmd="python"><div class="input-div"><pre data-role="codeBlock" data-info="python{code_chunk_offset=0, cmd=&quot;python&quot; output=&quot;markdown&quot;}" class="language-python">chart_templete <span class="token operator">=</span> <span class="token triple-quoted-string string">&quot;&quot;&quot;[code]vega-lite
+    {
+    &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;,
+    &quot;description&quot;: &quot;A simple bar chart with embedded data.&quot;,
+    &quot;width&quot;: 800,
+    &quot;data&quot;: {
+        &quot;values&quot;: [
+        {&quot;a&quot;: &quot;A&quot;, &quot;b&quot;: 28}, {&quot;a&quot;: &quot;B&quot;, &quot;b&quot;: 55}, {&quot;a&quot;: &quot;C&quot;, &quot;b&quot;: 43},
+        {&quot;a&quot;: &quot;D&quot;, &quot;b&quot;: 91}, {&quot;a&quot;: &quot;E&quot;, &quot;b&quot;: 81}, {&quot;a&quot;: &quot;F&quot;, &quot;b&quot;: 53},
+        {&quot;a&quot;: &quot;G&quot;, &quot;b&quot;: 19}, {&quot;a&quot;: &quot;H&quot;, &quot;b&quot;: 87}, {&quot;a&quot;: &quot;I&quot;, &quot;b&quot;: 52}
+        ]
+    },
+    &quot;mark&quot;: &quot;bar&quot;,
+    &quot;encoding&quot;: {
+        &quot;x&quot;: {&quot;field&quot;: &quot;a&quot;, &quot;type&quot;: &quot;nominal&quot;, &quot;axis&quot;: {&quot;labelAngle&quot;: 0}},
+        &quot;y&quot;: {&quot;field&quot;: &quot;b&quot;, &quot;type&quot;: &quot;quantitative&quot;}
+    }
+    }
+[code]
+&quot;&quot;&quot;</span>
+<span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span>chart_templete<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">&quot;[code]&quot;</span><span class="token punctuation">,</span> <span class="token string">&apos;`&apos;</span><span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</pre><div class="btn-group"><div class="run-btn btn"><span>&#x25B6;&#xFE0E;</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"><p><!--?xml version="1.0" encoding="utf-8"?-->
+
+<svg class="marks" width="856" height="247" viewBox="0 0 856 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><rect width="856" height="247" style="fill: white;"/><g transform="translate(51,10)"><g class="mark-group role-frame root"><g transform="translate(0,0)"><path class="background" d="M0.5,0.5h800v200h-800Z" style="fill: none; stroke: #ddd;"/><g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-grid" style="pointer-events: none;"><line transform="translate(0,200)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,160)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,120)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,80)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,40)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,0)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-group role-axis"><g transform="translate(0.5,200.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-tick" style="pointer-events: none;"><line transform="translate(44,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(133,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(222,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(311,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(400,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(488,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(577,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(666,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(755,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="middle" transform="translate(43.94444444444446,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">A</text><text text-anchor="middle" transform="translate(132.83333333333334,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">B</text><text text-anchor="middle" transform="translate(221.72222222222223,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">C</text><text text-anchor="middle" transform="translate(310.6111111111111,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">D</text><text text-anchor="middle" transform="translate(399.5,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">E</text><text text-anchor="middle" transform="translate(488.3888888888889,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">F</text><text text-anchor="middle" transform="translate(577.2777777777777,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">G</text><text text-anchor="middle" transform="translate(666.1666666666666,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">H</text><text text-anchor="middle" transform="translate(755.0555555555555,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">I</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,0)" x2="800" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-title" style="pointer-events: none;"><text text-anchor="middle" transform="translate(400,30)" style="font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #000; opacity: 1;">a</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-tick" style="pointer-events: none;"><line transform="translate(0,200)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,160)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,120)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,80)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,40)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,0)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="end" transform="translate(-7,203)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">0</text><text text-anchor="end" transform="translate(-7,163)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">20</text><text text-anchor="end" transform="translate(-7,123)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">40</text><text text-anchor="end" transform="translate(-7,83)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">60</text><text text-anchor="end" transform="translate(-7,42.99999999999999)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">80</text><text text-anchor="end" transform="translate(-7,3)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">100</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,200)" x2="0" y2="-200" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-title" style="pointer-events: none;"><text text-anchor="middle" transform="translate(-35,100) rotate(-90) translate(0,-2)" style="font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #000; opacity: 1;">b</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-rect role-mark marks"><path d="M4.444444444444457,144h80v56h-80Z" style="fill: #4c78a8;"/><path d="M93.33333333333334,89.99999999999999h80v110.00000000000001h-80Z" style="fill: #4c78a8;"/><path d="M182.22222222222223,114.00000000000001h80v85.99999999999999h-80Z" style="fill: #4c78a8;"/><path d="M271.1111111111111,17.999999999999993h80v182h-80Z" style="fill: #4c78a8;"/><path d="M360,37.999999999999986h80v162h-80Z" style="fill: #4c78a8;"/><path d="M448.8888888888889,94h80v106h-80Z" style="fill: #4c78a8;"/><path d="M537.7777777777777,162h80v38h-80Z" style="fill: #4c78a8;"/><path d="M626.6666666666666,26h80v174h-80Z" style="fill: #4c78a8;"/><path d="M715.5555555555555,96h80v104h-80Z" style="fill: #4c78a8;"/></g></g><path class="foreground" d="" style="display: none; fill: none;"/></g></g></g></svg></p><p><!--?xml version="1.0" encoding="utf-8"?-->
+
+<svg class="marks" width="856" height="247" viewBox="0 0 856 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><rect width="856" height="247" style="fill: white;"/><g transform="translate(51,10)"><g class="mark-group role-frame root"><g transform="translate(0,0)"><path class="background" d="M0.5,0.5h800v200h-800Z" style="fill: none; stroke: #ddd;"/><g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-grid" style="pointer-events: none;"><line transform="translate(0,200)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,160)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,120)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,80)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,40)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/><line transform="translate(0,0)" x2="800" y2="0" style="fill: none; stroke: #ddd; stroke-width: 1; opacity: 1;"/></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-group role-axis"><g transform="translate(0.5,200.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-tick" style="pointer-events: none;"><line transform="translate(44,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(133,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(222,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(311,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(400,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(488,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(577,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(666,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(755,0)" x2="0" y2="5" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="middle" transform="translate(43.94444444444446,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">A</text><text text-anchor="middle" transform="translate(132.83333333333334,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">B</text><text text-anchor="middle" transform="translate(221.72222222222223,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">C</text><text text-anchor="middle" transform="translate(310.6111111111111,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">D</text><text text-anchor="middle" transform="translate(399.5,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">E</text><text text-anchor="middle" transform="translate(488.3888888888889,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">F</text><text text-anchor="middle" transform="translate(577.2777777777777,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">G</text><text text-anchor="middle" transform="translate(666.1666666666666,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">H</text><text text-anchor="middle" transform="translate(755.0555555555555,15)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">I</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,0)" x2="800" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-title" style="pointer-events: none;"><text text-anchor="middle" transform="translate(400,30)" style="font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #000; opacity: 1;">a</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"/><g><g class="mark-rule role-axis-tick" style="pointer-events: none;"><line transform="translate(0,200)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,160)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,120)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,80)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,40)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/><line transform="translate(0,0)" x2="-5" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="end" transform="translate(-7,203)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">0</text><text text-anchor="end" transform="translate(-7,163)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">20</text><text text-anchor="end" transform="translate(-7,123)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">40</text><text text-anchor="end" transform="translate(-7,83)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">60</text><text text-anchor="end" transform="translate(-7,42.99999999999999)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">80</text><text text-anchor="end" transform="translate(-7,3)" style="font-family: sans-serif; font-size: 10px; fill: #000; opacity: 1;">100</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,200)" x2="0" y2="-200" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"/></g><g class="mark-text role-axis-title" style="pointer-events: none;"><text text-anchor="middle" transform="translate(-35,100) rotate(-90) translate(0,-2)" style="font-family: sans-serif; font-size: 11px; font-weight: bold; fill: #000; opacity: 1;">b</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"/></g></g><g class="mark-rect role-mark marks"><path d="M4.444444444444457,144h80v56h-80Z" style="fill: #4c78a8;"/><path d="M93.33333333333334,89.99999999999999h80v110.00000000000001h-80Z" style="fill: #4c78a8;"/><path d="M182.22222222222223,114.00000000000001h80v85.99999999999999h-80Z" style="fill: #4c78a8;"/><path d="M271.1111111111111,17.999999999999993h80v182h-80Z" style="fill: #4c78a8;"/><path d="M360,37.999999999999986h80v162h-80Z" style="fill: #4c78a8;"/><path d="M448.8888888888889,94h80v106h-80Z" style="fill: #4c78a8;"/><path d="M537.7777777777777,162h80v38h-80Z" style="fill: #4c78a8;"/><path d="M626.6666666666666,26h80v174h-80Z" style="fill: #4c78a8;"/><path d="M715.5555555555555,96h80v104h-80Z" style="fill: #4c78a8;"/></g></g><path class="foreground" d="" style="display: none; fill: none;"/></g></g></g></svg></p></div></div><div class="code-chunk" data-id="code-chunk-id-1" data-cmd="python"><div class="input-div"><pre data-role="codeBlock" data-info="python{code_chunk_offset=1, cmd=&quot;python&quot; output=&quot;markdown&quot;}" class="language-python"><span class="token keyword keyword-import">import</span> pygal
+bar_chart <span class="token operator">=</span> pygal<span class="token punctuation">.</span>Bar<span class="token punctuation">(</span>height<span class="token operator">=</span><span class="token number">325</span><span class="token punctuation">)</span>
+bar_chart<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">&apos;Browser usage evolution (in %)&apos;</span>
+bar_chart<span class="token punctuation">.</span>x_labels <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">,</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2002</span><span class="token punctuation">,</span> <span class="token number">2013</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+bar_chart<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">&apos;Firefox&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">16.6</span><span class="token punctuation">,</span>   <span class="token number">25</span><span class="token punctuation">,</span>   <span class="token number">31</span><span class="token punctuation">,</span> <span class="token number">36.4</span><span class="token punctuation">,</span> <span class="token number">45.5</span><span class="token punctuation">,</span> <span class="token number">46.3</span><span class="token punctuation">,</span> <span class="token number">42.8</span><span class="token punctuation">,</span> <span class="token number">37.1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+bar_chart<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">&apos;Chrome&apos;</span><span class="token punctuation">,</span>  <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">,</span>    <span class="token number">0</span><span class="token punctuation">,</span>  <span class="token number">3.9</span><span class="token punctuation">,</span> <span class="token number">10.8</span><span class="token punctuation">,</span> <span class="token number">23.8</span><span class="token punctuation">,</span> <span class="token number">35.3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+bar_chart<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">&apos;IE&apos;</span><span class="token punctuation">,</span>      <span class="token punctuation">[</span><span class="token number">85.8</span><span class="token punctuation">,</span> <span class="token number">84.6</span><span class="token punctuation">,</span> <span class="token number">84.7</span><span class="token punctuation">,</span> <span class="token number">74.5</span><span class="token punctuation">,</span>   <span class="token number">66</span><span class="token punctuation">,</span> <span class="token number">58.6</span><span class="token punctuation">,</span> <span class="token number">54.7</span><span class="token punctuation">,</span> <span class="token number">44.8</span><span class="token punctuation">,</span> <span class="token number">36.2</span><span class="token punctuation">,</span> <span class="token number">26.6</span><span class="token punctuation">,</span> <span class="token number">20.1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+bar_chart<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">&apos;Others&apos;</span><span class="token punctuation">,</span>  <span class="token punctuation">[</span><span class="token number">14.2</span><span class="token punctuation">,</span> <span class="token number">15.4</span><span class="token punctuation">,</span> <span class="token number">15.3</span><span class="token punctuation">,</span>  <span class="token number">8.9</span><span class="token punctuation">,</span>    <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10.4</span><span class="token punctuation">,</span>  <span class="token number">8.9</span><span class="token punctuation">,</span>  <span class="token number">5.8</span><span class="token punctuation">,</span>  <span class="token number">6.7</span><span class="token punctuation">,</span>  <span class="token number">6.8</span><span class="token punctuation">,</span>  <span class="token number">7.5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>bar_chart<span class="token punctuation">.</span>render<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">&quot;\\n&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</pre><div class="btn-group"><div class="run-btn btn"><span>&#x25B6;&#xFE0E;</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div><div class="output-div"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" id="chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7" class="pygal-chart" viewBox="0 0 800 325"><!--Generated with pygal 3.0.0 (lxml) \xc2\xa9Kozea 2012-2016 on 2023-05-05--><!--http://pygal.org--><!--http://github.com/Kozea/pygal--><defs><style type="text/css">#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7{-webkit-user-select:none;-webkit-font-smoothing:antialiased;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .title{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:16px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .legends .legend text{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:14px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis text{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:10px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis text.major{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:10px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .text-overlay text.value{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:16px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .text-overlay text.label{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:10px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:14px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 text.no_data{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:64px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7{background-color:rgba(249,249,249,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 path,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 rect,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 circle{-webkit-transition:150ms;-moz-transition:150ms;transition:150ms}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .graph > .background{fill:rgba(249,249,249,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .plot > .background{fill:rgba(255,255,255,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .graph{fill:rgba(0,0,0,.87)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 text.no_data{fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .title{fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .legends .legend text{fill:rgba(0,0,0,.87)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .legends .legend:hover text{fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .line{stroke:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .guide.line{stroke:rgba(0,0,0,.54)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .major.line{stroke:rgba(0,0,0,.87)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis text.major{fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y .guides:hover .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .line-graph .axis.x .guides:hover .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .stackedline-graph .axis.x .guides:hover .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .xy-graph .axis.x .guides:hover .guide.line{stroke:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .guides:hover text{fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .reactive{fill-opacity:.7;stroke-opacity:.8;stroke-width:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .ci{stroke:rgba(0,0,0,.87)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .reactive.active,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .active .reactive{fill-opacity:.8;stroke-opacity:.9;stroke-width:4}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .ci .reactive.active{stroke-width:1.5}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .series text{fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip rect{fill:rgba(255,255,255,1);stroke:rgba(0,0,0,1);-webkit-transition:opacity 150ms;-moz-transition:opacity 150ms;transition:opacity 150ms}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip .label{fill:rgba(0,0,0,.87)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip .label{fill:rgba(0,0,0,.87)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip .legend{font-size:.8em;fill:rgba(0,0,0,.54)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip .x_label{font-size:.6em;fill:rgba(0,0,0,1)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip .xlink{font-size:.5em;text-decoration:underline}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip .value{font-size:1.5em}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .bound{font-size:.5em}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .max-value{font-size:.75em;fill:rgba(0,0,0,.54)}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .map-element{fill:rgba(255,255,255,1);stroke:rgba(0,0,0,.54) !important}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .map-element .reactive{fill-opacity:inherit;stroke-opacity:inherit}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-0,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-0 a:visited{stroke:#F44336;fill:#F44336}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-1,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-1 a:visited{stroke:#3F51B5;fill:#3F51B5}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-2,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-2 a:visited{stroke:#009688;fill:#009688}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-3,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .color-3 a:visited{stroke:#FFC107;fill:#FFC107}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .text-overlay .color-0 text{fill:black}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .text-overlay .color-1 text{fill:black}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .text-overlay .color-2 text{fill:black}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .text-overlay .color-3 text{fill:black}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 text.no_data{text-anchor:middle}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .guide.line{fill:none}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .centered{text-anchor:middle}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .title{text-anchor:middle}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .legends .legend text{fill-opacity:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.x text{text-anchor:middle}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.x:not(.web) text[transform]{text-anchor:start}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.x:not(.web) text[transform].backwards{text-anchor:end}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y text{text-anchor:end}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y text[transform].backwards{text-anchor:start}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y2 text{text-anchor:start}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y2 text[transform].backwards{text-anchor:end}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .guide.line{stroke-dasharray:4,4;stroke:black}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .major.guide.line{stroke-dasharray:6,6;stroke:black}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .horizontal .axis.y .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .horizontal .axis.y2 .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .vertical .axis.x .guide.line{opacity:0}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .horizontal .axis.always_show .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .vertical .axis.always_show .guide.line{opacity:1 !important}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y .guides:hover .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.y2 .guides:hover .guide.line,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis.x .guides:hover .guide.line{opacity:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .axis .guides:hover text{opacity:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .nofill{fill:none}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .subtle-fill{fill-opacity:.2}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .dot{stroke-width:1px;fill-opacity:1;stroke-opacity:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .dot.active{stroke-width:5px}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .dot.negative{fill:transparent}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 text,#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 tspan{stroke:none !important}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .series text.active{opacity:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip rect{fill-opacity:.95;stroke-width:.5}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .tooltip text{fill-opacity:1}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .showable{visibility:hidden}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .showable.shown{visibility:visible}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .gauge-background{fill:rgba(229,229,229,1);stroke:none}#chart-b622f49f-172d-4d1f-9542-f5cde51ac0b7 .bg-lines{stroke:rgba(249,249,249,1);stroke-width:2px}</style><script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config[\'b622f49f-172d-4d1f-9542-f5cde51ac0b7\'] = {"allow_interruptions": false, "box_mode": "extremes", "classes": ["pygal-chart"], "css": ["file://style.css", "file://graph.css"], "defs": [], "disable_xml_declaration": false, "dots_size": 2.5, "dynamic_print_values": false, "explicit_size": false, "fill": false, "force_uri_protocol": "https", "formatter": null, "half_pie": false, "height": 325, "include_x_axis": false, "inner_radius": 0, "interpolate": null, "interpolation_parameters": {}, "interpolation_precision": 250, "inverse_y_axis": false, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "legend_at_bottom": false, "legend_at_bottom_columns": null, "legend_box_size": 12, "logarithmic": false, "margin": 20, "margin_bottom": null, "margin_left": null, "margin_right": null, "margin_top": null, "max_scale": 16, "min_scale": 4, "missing_value_fill_truncation": "x", "no_data_text": "No data", "no_prefix": false, "order_min": null, "pretty_print": false, "print_labels": false, "print_values": false, "print_values_position": "center", "print_zeroes": true, "range": null, "rounded_bars": null, "secondary_range": null, "show_dots": true, "show_legend": true, "show_minor_x_labels": true, "show_minor_y_labels": true, "show_only_major_dots": false, "show_x_guides": false, "show_x_labels": true, "show_y_guides": true, "show_y_labels": true, "spacing": 10, "stack_from_top": false, "strict": false, "stroke": true, "stroke_style": null, "style": {"background": "rgba(249, 249, 249, 1)", "ci_colors": [], "colors": ["#F44336", "#3F51B5", "#009688", "#FFC107", "#FF5722", "#9C27B0", "#03A9F4", "#8BC34A", "#FF9800", "#E91E63", "#2196F3", "#4CAF50", "#FFEB3B", "#673AB7", "#00BCD4", "#CDDC39", "#9E9E9E", "#607D8B"], "dot_opacity": "1", "font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "foreground": "rgba(0, 0, 0, .87)", "foreground_strong": "rgba(0, 0, 0, 1)", "foreground_subtle": "rgba(0, 0, 0, .54)", "guide_stroke_color": "black", "guide_stroke_dasharray": "4,4", "label_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "label_font_size": 10, "legend_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "legend_font_size": 14, "major_guide_stroke_color": "black", "major_guide_stroke_dasharray": "6,6", "major_label_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "major_label_font_size": 10, "no_data_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "no_data_font_size": 64, "opacity": ".7", "opacity_hover": ".8", "plot_background": "rgba(255, 255, 255, 1)", "stroke_opacity": ".8", "stroke_opacity_hover": ".9", "stroke_width": "1", "stroke_width_hover": "4", "title_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "title_font_size": 16, "tooltip_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "tooltip_font_size": 14, "transition": "150ms", "value_background": "rgba(229, 229, 229, 1)", "value_colors": [], "value_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "value_font_size": 16, "value_label_font_family": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace", "value_label_font_size": 10}, "title": "Browser usage evolution (in %)", "tooltip_border_radius": 0, "tooltip_fancy_mode": true, "truncate_label": null, "truncate_legend": null, "width": 800, "x_label_rotation": 0, "x_labels": ["2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012"], "x_labels_major": null, "x_labels_major_count": null, "x_labels_major_every": null, "x_title": null, "xrange": null, "y_label_rotation": 0, "y_labels": null, "y_labels_major": null, "y_labels_major_count": null, "y_labels_major_every": null, "y_title": null, "zero": 0, "legends": ["Firefox", "Chrome", "IE", "Others"]}</script><script type="text/javascript" href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/></defs><title>Browser usage evolution (in %)</title><g class="graph bar-graph vertical"><rect x="0" y="0" width="800" height="325" class="background"/><g transform="translate(122, 46)" class="plot"><rect x="0" y="0" width="657.2" height="239" class="background"/><g class="axis y always_show"><g class="guides"><path d="M0.000000 234.403846 h657.200000" class="axis major line"/><text x="-5" y="237.90384615384616" class="major">0</text><title>0</title></g><g class="guides"><path d="M0.000000 207.619733 h657.200000" class="guide line"/><text x="-5" y="211.11973283127128" class="">10</text><title>10</title></g><g class="guides"><path d="M0.000000 180.835620 h657.200000" class="guide line"/><text x="-5" y="184.33561950869642" class="">20</text><title>20</title></g><g class="guides"><path d="M0.000000 154.051506 h657.200000" class="guide line"/><text x="-5" y="157.55150618612154" class="">30</text><title>30</title></g><g class="guides"><path d="M0.000000 127.267393 h657.200000" class="guide line"/><text x="-5" y="130.7673928635467" class="">40</text><title>40</title></g><g class="guides"><path d="M0.000000 100.483280 h657.200000" class="major guide line"/><text x="-5" y="103.98327954097184" class="major">50</text><title>50</title></g><g class="guides"><path d="M0.000000 73.699166 h657.200000" class="guide line"/><text x="-5" y="77.19916621839695" class="">60</text><title>60</title></g><g class="guides"><path d="M0.000000 46.915053 h657.200000" class="guide line"/><text x="-5" y="50.4150528958221" class="">70</text><title>70</title></g><g class="guides"><path d="M0.000000 20.130940 h657.200000" class="guide line"/><text x="-5" y="23.63093957324722" class="">80</text><title>80</title></g></g><g class="axis x"><path d="M0.000000 0.000000 v239.000000" class="line"/><g class="guides"><path d="M41.362238 0.000000 v239.000000" class="guide line"/><text x="41.36223776223777" y="254.0" class="">2002</text></g><g class="guides"><path d="M98.809790 0.000000 v239.000000" class="guide line"/><text x="98.80979020979021" y="254.0" class="">2003</text></g><g class="guides"><path d="M156.257343 0.000000 v239.000000" class="guide line"/><text x="156.25734265734263" y="254.0" class="">2004</text></g><g class="guides"><path d="M213.704895 0.000000 v239.000000" class="guide line"/><text x="213.70489510489512" y="254.0" class="">2005</text></g><g class="guides"><path d="M271.152448 0.000000 v239.000000" class="guide line"/><text x="271.15244755244754" y="254.0" class="">2006</text></g><g class="guides"><path d="M328.600000 0.000000 v239.000000" class="guide line"/><text x="328.6" y="254.0" class="">2007</text></g><g class="guides"><path d="M386.047552 0.000000 v239.000000" class="guide line"/><text x="386.04755244755245" y="254.0" class="">2008</text></g><g class="guides"><path d="M443.495105 0.000000 v239.000000" class="guide line"/><text x="443.49510489510493" y="254.0" class="">2009</text></g><g class="guides"><path d="M500.942657 0.000000 v239.000000" class="guide line"/><text x="500.94265734265736" y="254.0" class="">2010</text></g><g class="guides"><path d="M558.390210 0.000000 v239.000000" class="guide line"/><text x="558.3902097902098" y="254.0" class="">2011</text></g><g class="guides"><path d="M615.837762 0.000000 v239.000000" class="guide line"/><text x="615.8377622377623" y="254.0" class="">2012</text></g></g><g class="series serie-0 color-0"><g class="bars"><g class="bar"><rect x="131.7387272727273" y="234.40384615384616" rx="0" ry="0" width="11.121846153846153" height="0.0" class="rect reactive tooltip-trigger"/><desc class="value">0</desc><desc class="x centered">137.29965034965036</desc><desc class="y centered">234.40384615384616</desc><desc class="x_label">2004</desc></g><g class="bar"><rect x="189.18627972027974" y="189.94221803837186" rx="0" ry="0" width="11.121846153846153" height="44.4616281154743" class="rect reactive tooltip-trigger"/><desc class="value">16.6</desc><desc class="x centered">194.74720279720282</desc><desc class="y centered">212.173032096109</desc><desc class="x_label">2005</desc></g><g class="bar"><rect x="246.63383216783217" y="167.443562847409" rx="0" ry="0" width="11.121846153846153" height="66.96028330643716" class="rect reactive tooltip-trigger"/><desc class="value">25</desc><desc class="x centered">252.19475524475524</desc><desc class="y centered">200.9237045006276</desc><desc class="x_label">2006</desc></g><g class="bar"><rect x="304.08138461538465" y="151.37309485386407" rx="0" ry="0" width="11.121846153846153" height="83.03075129998209" class="rect reactive tooltip-trigger"/><desc class="value">31</desc><desc class="x centered">309.6423076923077</desc><desc class="y centered">192.8884705038551</desc><desc class="x_label">2007</desc></g><g class="bar"><rect x="361.5289370629371" y="136.90967365967364" rx="0" ry="0" width="11.121846153846153" height="97.49417249417252" class="rect reactive tooltip-trigger"/><desc class="value">36.4</desc><desc class="x centered">367.08986013986015</desc><desc class="y centered">185.6567599067599</desc><desc class="x_label">2008</desc></g><g class="bar"><rect x="418.97648951048956" y="112.53613053613051" rx="0" ry="0" width="11.121846153846153" height="121.86771561771565" class="rect reactive tooltip-trigger"/><desc class="value">45.5</desc><desc class="x centered">424.53741258741263</desc><desc class="y centered">173.46998834498834</desc><desc class="x_label">2009</desc></g><g class="bar"><rect x="476.424041958042" y="110.39340147032453" rx="0" ry="0" width="11.121846153846153" height="124.01044468352163" class="rect reactive tooltip-trigger"/><desc class="value">46.3</desc><desc class="x centered">481.98496503496506</desc><desc class="y centered">172.39862381208536</desc><desc class="x_label">2010</desc></g><g class="bar"><rect x="533.8715944055945" y="119.76784113322574" rx="0" ry="0" width="11.121846153846153" height="114.63600502062042" class="rect reactive tooltip-trigger"/><desc class="value">42.8</desc><desc class="x centered">539.4325174825176</desc><desc class="y centered">177.08584364353595</desc><desc class="x_label">2011</desc></g><g class="bar"><rect x="591.3191468531469" y="135.03478572709338" rx="0" ry="0" width="11.121846153846153" height="99.36906042675278" class="rect reactive tooltip-trigger"/><desc class="value">37.1</desc><desc class="x centered">596.88006993007</desc><desc class="y centered">184.71931594046976</desc><desc class="x_label">2012</desc></g></g></g><g class="series serie-1 color-1"><g class="bars"><g class="bar"><rect x="374.1673986013986" y="234.40384615384616" rx="0" ry="0" width="11.121846153846153" height="0.0" class="rect reactive tooltip-trigger"/><desc class="value">0</desc><desc class="x centered">379.72832167832166</desc><desc class="y centered">234.40384615384616</desc><desc class="x_label">2008</desc></g><g class="bar"><rect x="431.61495104895107" y="223.95804195804195" rx="0" ry="0" width="11.121846153846153" height="10.445804195804214" class="rect reactive tooltip-trigger"/><desc class="value">3.9</desc><desc class="x centered">437.17587412587415</desc><desc class="y centered">229.18094405594405</desc><desc class="x_label">2009</desc></g><g class="bar"><rect x="489.0625034965035" y="205.4770037654653" rx="0" ry="0" width="11.121846153846153" height="28.926842388380862" class="rect reactive tooltip-trigger"/><desc class="value">10.8</desc><desc class="x centered">494.62342657342657</desc><desc class="y centered">219.94042495965573</desc><desc class="x_label">2010</desc></g><g class="bar"><rect x="546.510055944056" y="170.65765644611798" rx="0" ry="0" width="11.121846153846153" height="63.74618970772818" class="rect reactive tooltip-trigger"/><desc class="value">23.8</desc><desc class="x centered">552.0709790209792</desc><desc class="y centered">202.53075129998206</desc><desc class="x_label">2011</desc></g><g class="bar"><rect x="603.9576083916085" y="139.85592612515688" rx="0" ry="0" width="11.121846153846153" height="94.54792002868928" class="rect reactive tooltip-trigger"/><desc class="value">35.3</desc><desc class="x centered">609.5185314685316</desc><desc class="y centered">187.12988613950154</desc><desc class="x_label">2012</desc></g></g></g><g class="series serie-2 color-2"><g class="bars"><g class="bar"><rect x="42.12054545454545" y="4.59615384615384" rx="0" ry="0" width="11.121846153846153" height="229.80769230769232" class="rect reactive tooltip-trigger"/><desc class="value">85.8</desc><desc class="x centered">47.681468531468525</desc><desc class="y centered">119.5</desc><desc class="x_label">2002</desc></g><g class="bar"><rect x="99.5680979020979" y="7.810247444862824" rx="0" ry="0" width="11.121846153846153" height="226.59359870898334" class="rect reactive tooltip-trigger"/><desc class="value">84.6</desc><desc class="x centered">105.12902097902098</desc><desc class="y centered">121.10704679935449</desc><desc class="x_label">2003</desc></g><g class="bar"><rect x="157.01565034965037" y="7.542406311637052" rx="0" ry="0" width="11.121846153846153" height="226.8614398422091" class="rect reactive tooltip-trigger"/><desc class="value">84.7</desc><desc class="x centered">162.57657342657345</desc><desc class="y centered">120.9731262327416</desc><desc class="x_label">2004</desc></g><g class="bar"><rect x="214.46320279720283" y="34.86220190066339" rx="0" ry="0" width="11.121846153846153" height="199.54164425318277" class="rect reactive tooltip-trigger"/><desc class="value">74.5</desc><desc class="x centered">220.0241258741259</desc><desc class="y centered">134.63302402725478</desc><desc class="x_label">2005</desc></g><g class="bar"><rect x="271.91075524475525" y="57.62869822485206" rx="0" ry="0" width="11.121846153846153" height="176.7751479289941" class="rect reactive tooltip-trigger"/><desc class="value">66</desc><desc class="x centered">277.4716783216783</desc><desc class="y centered">146.0162721893491</desc><desc class="x_label">2006</desc></g><g class="bar"><rect x="329.35830769230773" y="77.44894208355743" rx="0" ry="0" width="11.121846153846153" height="156.95490407028873" class="rect reactive tooltip-trigger"/><desc class="value">58.6</desc><desc class="x centered">334.9192307692308</desc><desc class="y centered">155.9263941187018</desc><desc class="x_label">2007</desc></g><g class="bar"><rect x="386.80586013986016" y="87.89474627936164" rx="0" ry="0" width="11.121846153846153" height="146.50909987448452" class="rect reactive tooltip-trigger"/><desc class="value">54.7</desc><desc class="x centered">392.36678321678323</desc><desc class="y centered">161.1492962166039</desc><desc class="x_label">2008</desc></g><g class="bar"><rect x="444.25341258741264" y="114.41101846871076" rx="0" ry="0" width="11.121846153846153" height="119.9928276851354" class="rect reactive tooltip-trigger"/><desc class="value">44.8</desc><desc class="x centered">449.8143356643357</desc><desc class="y centered">174.40743231127846</desc><desc class="x_label">2009</desc></g><g class="bar"><rect x="501.70096503496507" y="137.44535592612513" rx="0" ry="0" width="11.121846153846153" height="96.95849022772103" class="rect reactive tooltip-trigger"/><desc class="value">36.2</desc><desc class="x centered">507.26188811188814</desc><desc class="y centered">185.92460103998565</desc><desc class="x_label">2010</desc></g><g class="bar"><rect x="559.1485174825175" y="163.158104715797" rx="0" ry="0" width="11.121846153846153" height="71.24574143804915" class="rect reactive tooltip-trigger"/><desc class="value">26.6</desc><desc class="x centered">564.7094405594406</desc><desc class="y centered">198.78097543482158</desc><desc class="x_label">2011</desc></g><g class="bar"><rect x="616.5960699300699" y="180.56777837547065" rx="0" ry="0" width="11.121846153846153" height="53.83606777837551" class="rect reactive tooltip-trigger"/><desc class="value">20.1</desc><desc class="x centered">622.156993006993</desc><desc class="y centered">207.48581226465842</desc><desc class="x_label">2012</desc></g></g></g><g class="series serie-3 color-3"><g class="bars"><g class="bar"><rect x="54.759006993006984" y="196.37040523578986" rx="0" ry="0" width="11.121846153846153" height="38.0334409180563" class="rect reactive tooltip-trigger"/><desc class="value">14.2</desc><desc class="x centered">60.31993006993006</desc><desc class="y centered">215.387125694818</desc><desc class="x_label">2002</desc></g><g class="bar"><rect x="112.20655944055945" y="193.15631163708088" rx="0" ry="0" width="11.121846153846153" height="41.247534516765285" class="rect reactive tooltip-trigger"/><desc class="value">15.4</desc><desc class="x centered">117.76748251748252</desc><desc class="y centered">213.78007889546353</desc><desc class="x_label">2003</desc></g><g class="bar"><rect x="169.65411188811188" y="193.4241527703066" rx="0" ry="0" width="11.121846153846153" height="40.97969338353957" class="rect reactive tooltip-trigger"/><desc class="value">15.3</desc><desc class="x centered">175.21503496503496</desc><desc class="y centered">213.9139994620764</desc><desc class="x_label">2004</desc></g><g class="bar"><rect x="227.10166433566437" y="210.56598529675452" rx="0" ry="0" width="11.121846153846153" height="23.83786085709164" class="rect reactive tooltip-trigger"/><desc class="value">8.9</desc><desc class="x centered">232.66258741258744</desc><desc class="y centered">222.48491572530034</desc><desc class="x_label">2005</desc></g><g class="bar"><rect x="284.5492167832168" y="210.29814416352878" rx="0" ry="0" width="11.121846153846153" height="24.105701990317385" class="rect reactive tooltip-trigger"/><desc class="value">9</desc><desc class="x centered">290.1101398601399</desc><desc class="y centered">222.35099515868745</desc><desc class="x_label">2006</desc></g><g class="bar"><rect x="341.99676923076925" y="206.5483682983683" rx="0" ry="0" width="11.121846153846153" height="27.855477855477858" class="rect reactive tooltip-trigger"/><desc class="value">10.4</desc><desc class="x centered">347.5576923076923</desc><desc class="y centered">220.47610722610722</desc><desc class="x_label">2007</desc></g><g class="bar"><rect x="399.44432167832167" y="210.56598529675452" rx="0" ry="0" width="11.121846153846153" height="23.83786085709164" class="rect reactive tooltip-trigger"/><desc class="value">8.9</desc><desc class="x centered">405.00524475524475</desc><desc class="y centered">222.48491572530034</desc><desc class="x_label">2008</desc></g><g class="bar"><rect x="456.89187412587415" y="218.86906042675272" rx="0" ry="0" width="11.121846153846153" height="15.534785727093436" class="rect reactive tooltip-trigger"/><desc class="value">5.8</desc><desc class="x centered">462.4527972027972</desc><desc class="y centered">226.63645329029944</desc><desc class="x_label">2009</desc></g><g class="bar"><rect x="514.3394265734265" y="216.458490227721" rx="0" ry="0" width="11.121846153846153" height="17.94535592612516" class="rect reactive tooltip-trigger"/><desc class="value">6.7</desc><desc class="x centered">519.9003496503497</desc><desc class="y centered">225.43116819078358</desc><desc class="x_label">2010</desc></g><g class="bar"><rect x="571.7869790209791" y="216.19064909449526" rx="0" ry="0" width="11.121846153846153" height="18.213197059350904" class="rect reactive tooltip-trigger"/><desc class="value">6.8</desc><desc class="x centered">577.3479020979022</desc><desc class="y centered">225.29724762417072</desc><desc class="x_label">2011</desc></g><g class="bar"><rect x="629.2345314685315" y="214.31576116191502" rx="0" ry="0" width="11.121846153846153" height="20.08808499193114" class="rect reactive tooltip-trigger"/><desc class="value">7.5</desc><desc class="x centered">634.7954545454546</desc><desc class="y centered">224.3598036578806</desc><desc class="x_label">2012</desc></g></g></g></g><g class="titles"><text x="400.0" y="26" class="title plot_title">Browser usage evolution (in %)</text></g><g transform="translate(122, 46)" class="plot overlay"><g class="series serie-0 color-0"/><g class="series serie-1 color-1"/><g class="series serie-2 color-2"/><g class="series serie-3 color-3"/></g><g transform="translate(122, 46)" class="plot text-overlay"><g class="series serie-0 color-0"/><g class="series serie-1 color-1"/><g class="series serie-2 color-2"/><g class="series serie-3 color-3"/></g><g transform="translate(122, 46)" class="plot tooltip-overlay"><g transform="translate(0 0)" style="opacity: 0" class="tooltip"><rect rx="0" ry="0" width="0" height="0" class="tooltip-box"/><g class="text"/></g></g><g transform="translate(10, 56)" class="legends"><g id="activate-serie-0" class="legend reactive activate-serie"><rect x="0.0" y="1.0" width="12" height="12" class="color-0 reactive"/><text x="17.0" y="11.2">Firefox</text></g><g id="activate-serie-1" class="legend reactive activate-serie"><rect x="0.0" y="22.0" width="12" height="12" class="color-1 reactive"/><text x="17.0" y="32.2">Chrome</text></g><g id="activate-serie-2" class="legend reactive activate-serie"><rect x="0.0" y="43.0" width="12" height="12" class="color-2 reactive"/><text x="17.0" y="53.2">IE</text></g><g id="activate-serie-3" class="legend reactive activate-serie"><rect x="0.0" y="64.0" width="12" height="12" class="color-3 reactive"/><text x="17.0" y="74.2">Others</text></g></g><g transform="translate(790, 56)" class="legends"/></g></svg>
+</div></div>
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#markdown-preview-enhanced-%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B">Markdown Preview Enhanced &#x57FA;&#x7840;&#x6559;&#x7A0B;</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    <script>
+// config mermaid init call
+// http://knsv.github.io/mermaid/#configuration
+//
+// You can edit the 'MERMAID_CONFIG' variable below.
+MERMAID_CONFIG = {
+  startOnLoad: false
+}
+
+if (window['MERMAID_CONFIG']) {
+  window['MERMAID_CONFIG'].startOnLoad = false
+  window['MERMAID_CONFIG'].cloneCssStyles = false
+  window['MERMAID_CONFIG'].theme = "default"
+}
+mermaid.initialize(window['MERMAID_CONFIG'] || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+} else {
+  mermaid.init(null, document.getElementsByClassName('mermaid'))
+}
+</script>
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2023年05月05日 17:37</p>
+        <p>原始链接： <a class="post-url" href="/2023/05/12/markdown%20preview%20enhanced/" title="">http://example.com/2023/05/12/markdown%20preview%20enhanced/</a></p>
+        <footer>
+            <a href="http://example.com">
+                <img src="/images/logo.png" alt="John Doe">
+                John Doe
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/05/12/markdown%20preview%20enhanced/&title=Hexo&pic=http://example.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/05/12/markdown%20preview%20enhanced/&title=Hexo&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2023/05/12/markdown%20preview%20enhanced/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Hexo&url=http://example.com/2023/05/12/markdown%20preview%20enhanced/&via=http://example.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://example.com/2023/05/12/markdown%20preview%20enhanced/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://example.com/2023/05/12/markdown%20preview%20enhanced/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#markdown-preview-enhanced-%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B"><span class="post-toc-text">Markdown Preview Enhanced 基础教程</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2023/05/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">我的第一篇博客文章</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2023 John Doe<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://example.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+
+<script src="/js/search.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  
+<script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+
+  
+<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  
+<script src="/js/animate.js"></script>
+
+
+
+  
+<script src="/js/pop-img.js"></script>
+
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
